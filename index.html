@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanisha Kamtikar</title>
-    <link rel="stylesheet" 
+    <link rel="icon" type="image" href="weblogo.png">
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffd6e8, #fbeaff, #e0f7ff);
+            background: #DCA1A1;
             color: #444;
         }
 
@@ -48,6 +49,7 @@
             margin-left: 15px;
             text-decoration: none;
             font-size: 1.4rem;
+            color: black;
         }
 
         .main-content {
@@ -79,6 +81,11 @@
             margin-bottom: 30px;
         }
 
+        .project-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -91,6 +98,14 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-box a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
     </style>
@@ -102,8 +117,8 @@
     <!-- Social Icons Top Right -->
     <div class="top-bar">
         <div class="socials">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/tanishakamtikar" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tanisha-kamtikar-593785303/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </div>
 
@@ -115,50 +130,23 @@
 
         <div class="card">
             <h1>Hi, I'm Tanisha Kamtikar!</h1>
-            <p>Description.</p>
+            <p>Curiosity has always been at the center of how I move through the world. To me, it is one of the most powerful forces for change - the spark that helps us question what exists, imagine what could be, and stay open to new ways of thinking. It is what keeps me learning, exploring, and searching for better ways to understand people and the systems we live in.</p>
+            <p>I care deeply about building a world that is kinder, fairer, and more connected - one with less cruelty, less corruption, and more compassion for both people and animals. I do not believe meaningful change happens all at once, but I do believe it begins when people are willing to think deeply, act thoughtfully, and keep moving forward one step at a time.</p>
+            <p>That is why I am drawn to product thinking. I love the idea of bringing curiosity, empathy, and intention together to shape solutions that can make life better in real ways. For me, product thinking is not just about building things - it is about understanding what matters, asking better questions, and contributing, however modestly, to a better future.</p>
         </div>
 
         <div class="card">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project-box">
-                    <h3>Project One</h3>
-                    <p>Short and sweet description here.</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project Two</h3>
-                    <p>Short and sweet description here.</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project Three</h3>
-                    <p>Short and sweet description here.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Hobbies</h2>
-            <div class="projects">
-                <div class="project-box">
-                    <h3>Hobby One</h3>
-                    <p>Short and sweet description here.</p>
-                </div>
-                <div class="project-box">
-                    <h3>Hobby Two</h3>
-                    <p>Short and sweet description here.</p>
-                </div>
-                <div class="project-box">
-                    <h3>Hobby Three</h3>
-                    <p>Short and sweet description here.</p>
+                    <a href="chatgpt-case-study.html">
+                        <h3>ChatGPT Case Study</h3>
+                        <p>Check out my case study :)</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
-    <footer>
-        © 2026 Your Name
-    </footer>
-
 </div>
 
 </body>
